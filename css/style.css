@@ -1,0 +1,196 @@
+/* Importação da fonte */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Reset de estilos e definição da fonte */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Definição do corpo da página */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  background-color: var(--primarybg-color);
+}
+
+/* Definição de cores personalizadas */
+.light-mode {
+  transition: 0.5s;
+  --primarybg-color: #e9e9e9;
+  --secondarybg-color: #d6d6d6;
+  --tertiarybg-color: #c2c2c2;
+  --primarytxt-color: #000000;
+}
+
+/* Tema escuro */
+.dark-theme {
+  transition: 0.5s;
+  --primarybg-color: #131313;
+  --secondarybg-color: #272727;
+  --tertiarybg-color: #353535;
+  --primarytxt-color: #ffffff;
+}
+
+/* Estilos para o título da main */
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Estilos para o ícone de modo */
+#mode_icon {
+  cursor: pointer;
+  width: 34px;
+  height: 32px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primarytxt-color);
+}
+
+/* Estilos para o formulário */
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2.5rem;
+  background-color: var(--secondarybg-color);
+  color: var(--primarytxt-color);
+}
+
+.input-box {
+  color: var(--primarytxt-color);
+}
+
+.input-box label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.input-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 30px;
+  margin-top: 15px;
+  background-color: var(--tertiarybg-color);
+}
+
+.input-element span,
+.input-element i {
+  font-size: 1.2rem;
+  padding: 0.3rem 1rem;
+}
+
+.input-element input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  color: var(--primarytxt-color);
+  outline: none;
+}
+
+.input-element input::-webkit-inner-spin-button,
+.input-element input::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+/* Estilos para o botão do formulário */
+#input-btn {
+  cursor: pointer;
+  padding: 1rem 0;
+  border: 2px solid var(--primarytxt-color);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--primarytxt-color);
+  position: relative;
+  z-index: 1;
+}
+
+#input-btn:before {
+  content: "";
+  bottom: 0;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  position: absolute;
+  opacity: 0;
+  background-color: #d38130;
+  transition: 0.5s ease;
+}
+
+#input-btn:hover:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+
+/* Estilos para o resultado */
+#result {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  color: var(--primarytxt-color);
+}
+
+.r_imc {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 4px solid #d38130;
+  padding-top: 1rem;
+  font-size: 2.5rem;
+}
+
+.r_imc span:first-child {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+/* Classe para ocultar o resultado */
+.hidden {
+  display: none !important;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  body {
+    height: 100%;
+    padding: 0;
+  }
+
+  #form {
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+}
