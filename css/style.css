@@ -115,6 +115,10 @@ body {
   appearance: none;
 }
 
+.input-element input {
+  -moz-appearance: textfield;
+}
+
 /* Estilos para o botão do formulário */
 #input-btn {
   cursor: pointer;
