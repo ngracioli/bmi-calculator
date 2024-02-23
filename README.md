@@ -2,7 +2,7 @@
 
 # BMI Calculator ✨
 
-<h3>BMI Calculator é uma website responsável por calcular o IMC (Índice de Massa Corporal) através das informações inseridas.</h3>
+<h3>BMI Calculator é um website responsável por calcular o IMC (Índice de Massa Corporal) através das informações inseridas.</h3>
 
 <img  width="100%"  src="https://i.imgur.com/Afyqlxt.png">
 <img  width="100%"  src="https://i.imgur.com/AXSBw9W.png">
