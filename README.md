@@ -1,5 +1,4 @@
 <div  align="center">
----
 
 # BMI Calculator ✨
 
