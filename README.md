@@ -1,5 +1,5 @@
 <div  align="center">
-# BMI Calculator ✨
+## BMI Calculator ✨
 
 <h3>BMI Calculator é uma website responsável por calcular o IMC (Índice de Massa Corporal) através das informações inseridas.</h3>
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 💻 Técnologias
+### 💻 Técnologias
 - [HTML]
 - [CSS]
 - [JavaScript]
