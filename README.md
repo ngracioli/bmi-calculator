@@ -17,3 +17,6 @@
 - **JavaScript**
 
 ---
+
+### ⚡ Live Demo 
+[BMI Calculator - Website](https://ngracioli.github.io/bmi-calculator/)
